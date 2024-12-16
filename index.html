@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de circunferencia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="datosCont">
+        <h2>Calculadora de circunferencia</h2>
+        <label for="radioInput">Ingrese radio</label>
+        <input type="number" id="radioInput" class="medidas inputsManual" placeholder="Radio" value="0">
+        <br><br>
+        <label for="diametroInput">Ingrese diametro</label>
+        <input type="number" id="diametroInput" class="medidas inputsManual" placeholder="Diametro" value="0">
+        <br><br>
+        <label for="circunferenciaInput">Ingrese circunferencia </label>
+        <input type="number" id="circunferenciaInput" class="medidas inputsManual" placeholder="Circunferencia" value="0">
+        <br><br>
+        <label for="sliderDatos">Tamaño círculo</label>
+        <input type="range" name="Slider radio" id="sliderDatos" class="medidas" min="0" max="2000" step="0.01">
+        <br><br>
+        <label for="inputColor">Color círculo</label>
+        <input type="color" name="Color circulo" id="inputColor">
+        <button id="resetButton">Reset</button>
+        <br>
+    </div>
+
+    <div id="canvasCont">
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+</body>
+</html>
